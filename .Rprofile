@@ -1,5 +1,3 @@
-print("~/.Rprofile loaded njaga")
-
 if(interactive()){
    library(colorout)  # Color to nvim console
 
@@ -25,5 +23,7 @@ options(repos=structure(c(CRAN="https://cran.uib.no/")))
 
 # Options
 
+# End prompt
+print("~/.Rprofile loaded buddy")
 
 
