@@ -55,12 +55,6 @@ nnoremap <Leader>o :CtrlP<CR>		" Open file menu
 nnoremap <Leader>O :CtrlPBuffer<CR>	" Open buffer menu
 noremap <leader>n :nohlsearch<CR>
 
-"Enter creates new line in normal mode
-nmap <S-Enter> O<Esc>
-nmap <CR> o<Esc>
-
-
-
 " Settings tips from http://nerditya.com/code/guide-to-neovim/
 set showcmd             " Show (partial) command in status line.
 set showmatch           " Show matching brackets.
@@ -96,6 +90,9 @@ set magic               " Use 'magic' patterns (extended regular expressions).
 
 " Search and Replace
 nmap <Leader>s :%s//g<Left><Left>
+
+" Search and Replace - selection
+nmap <Leader>r :%s/\%V/g<Left><Left>
 
 " Open NERDtree with Ctrl+n
 map <C-n> :NERDTreeToggle<CR>
