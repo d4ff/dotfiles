@@ -1,6 +1,14 @@
-" nvim-R
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Airline
+let g:airline_theme='solarized'
+let g:airline_solarized_bg='dark'
+let g:airline#parts#ffenc#skip_expected_string='utf-8[unix]'
 
+"EasyMotion colors
+hi link EasyMotionTarget ErrorMsg
+hi link EasyMotionShade Comment
+
+
+" nvim-R
 autocmd VimLeave * if exists("g:SendCmdToR") && string(g:SendCmdToR) != "function('SendCmdToR_fake')" | call RQuit("nosave") | endif  " Auto-quit when exiting nvim
 
 " Use Ctrl+Space to do omnicompletion:
@@ -18,7 +26,6 @@ vmap <Space> <Plug>RDSendSelection
 nmap <Space> <Plug>RDSendLine
 
 " Vimtex
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:tex_flavor = 'latex'
 let g:vimtex_view_method = 'mupdf'
 if has('nvim')
