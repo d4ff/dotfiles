@@ -33,3 +33,5 @@ map <silent> <A-j> <C-W>-
 map <silent> <A-k> <C-W>+
 map <silent> <A-l> <C-w>>
 
+" Exit neovim terminal with Esc
+tnoremap <Esc> <C-\><C-n>

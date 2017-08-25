@@ -34,6 +34,18 @@ Plug 'https://github.com/easymotion/vim-easymotion.git'
 " Automatic whitespace elimination
 Plug 'https://github.com/thirtythreeforty/lessspace.vim.git'
 
+" Insert mode completions with TAB
+Plug 'https://github.com/ervandew/supertab.git'
+
+" Auto-completion in python
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+
+" Better csv
+Plug 'chrisbra/csv.vim', {'for': 'csv'}
+
+" REPL's
+Plug 'hkupty/iron.nvim', { 'do': ':UpdateRemotePlugins' }
+
 call plug#end()
 
 source $HOME/.config/nvim/general.vimrc

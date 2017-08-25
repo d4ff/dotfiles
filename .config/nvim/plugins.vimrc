@@ -18,6 +18,13 @@ else
    inoremap <Nul> <C-x><C-o>
 endif
 
+" iron.nvim python REPL
+augroup ironmapping
+    autocmd!
+    autocmd Filetype python nmap <buffer> <Space> <Plug>(iron-send-motion)
+    autocmd Filetype python vmap <buffer> <Space> <Plug>(iron-send-motion)
+augroup END
+
 " Disable _ = <-
 let R_assign = 0
 
@@ -32,5 +39,6 @@ if has('nvim')
     let g:vimtex_compiler_progname = 'nvr'
 endif
 
-
+" deoplete
+let g:deoplete#enable_at_startup = 1
 
