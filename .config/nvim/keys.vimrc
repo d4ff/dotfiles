@@ -6,8 +6,8 @@ map ¤ $
 imap ¤ $
 
 " Leader bidings
-noremap <leader>ev :vsplit $MYVIMRC<cr>
-noremap <leader>cs :vsplit ~/.config/nvim/nvimCheatsheet<cr>
+noremap <leader>ev :tabnew $MYVIMRC<cr>
+noremap <leader>cs :tabnew ~/Documents/cheatsheet
 nnoremap <Leader>o :CtrlP<CR>		" Open file menu
 nnoremap <Leader>O :CtrlPBuffer<CR>	" Open buffer menu
 noremap <leader>n :nohlsearch<CR>

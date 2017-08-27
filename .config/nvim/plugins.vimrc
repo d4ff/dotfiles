@@ -18,6 +18,14 @@ else
    inoremap <Nul> <C-x><C-o>
 endif
 
+" Disable _ = <-
+let R_assign = 0
+
+" Press the space bar to send lines and selection to R:
+vmap <Space> <Plug>RDSendSelection
+nmap <Space> <Plug>RDSendLine
+
+
 " iron.nvim python REPL
 augroup ironmapping
     autocmd!
@@ -25,12 +33,6 @@ augroup ironmapping
     autocmd Filetype python vmap <buffer> <Space> <Plug>(iron-send-motion)
 augroup END
 
-" Disable _ = <-
-let R_assign = 0
-
-" Press the space bar to send lines and selection to R:
-vmap <Space> <Plug>RDSendSelection
-nmap <Space> <Plug>RDSendLine
 
 " Vimtex
 let g:tex_flavor = 'latex'

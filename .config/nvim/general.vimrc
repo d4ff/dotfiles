@@ -23,6 +23,7 @@ set shiftwidth=4
 set expandtab
 set autoindent
 set fileformat=unix
+au BufNewFile,BufRead *.pmd set filetype=python
 
 " Miscellaneous
 set showmatch           " Show matching brackets.
