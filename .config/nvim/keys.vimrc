@@ -5,6 +5,10 @@ let mapleader="\,"
 map ¤ $
 imap ¤ $
 
+" Remap O and o to stay in normal mode
+nmap o o<Esc>
+nmap O O<Esc>
+
 " Leader bidings
 noremap <leader>ev :tabnew $MYVIMRC<cr>
 noremap <leader>cs :tabnew ~/Documents/cheatsheet
