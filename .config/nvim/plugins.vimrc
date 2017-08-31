@@ -7,21 +7,11 @@ let g:airline#parts#ffenc#skip_expected_string='utf-8[unix]'
 hi link EasyMotionTarget ErrorMsg
 hi link EasyMotionShade Comment
 
-
 " nvim-R
 autocmd VimLeave * if exists("g:SendCmdToR") && string(g:SendCmdToR) != "function('SendCmdToR_fake')" | call RQuit("nosave") | endif  " Auto-quit when exiting nvim
 
-" Use Ctrl+Space to do omnicompletion:
-if has("gui_running")
-   inoremap <C-Space> <C-x><C-o>
-else
-   inoremap <Nul> <C-x><C-o>
-endif
+let R_assign = 0  " Disable _ = <-
 
-" Disable _ = <-
-let R_assign = 0
-
-" Press the space bar to send lines and selection to R:
 vmap <Space> <Plug>RDSendSelection
 nmap <Space> <Plug>RDSendLine
 
@@ -33,7 +23,6 @@ augroup ironmapping
     autocmd Filetype python vmap <buffer> <Space> <Plug>(iron-send-motion)
 augroup END
 
-
 " Vimtex
 let g:tex_flavor = 'latex'
 let g:vimtex_view_method = 'mupdf'
@@ -44,3 +33,8 @@ endif
 " deoplete
 let g:deoplete#enable_at_startup = 1
 
+" CtrlP
+let g:ctrlp_working_path_mode = 'c'  " default dir = current file
+
+" grammarous
+let g:grammarous#use_vim_spelllang = 1

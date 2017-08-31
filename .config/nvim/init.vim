@@ -1,5 +1,8 @@
 call plug#begin('~/.config/nvim/plugged')
 
+" Spelling and grammar
+Plug 'https://github.com/rhysd/vim-grammarous.git'
+
 " Preview .md as you type
 Plug 'euclio/vim-markdown-composer'
 

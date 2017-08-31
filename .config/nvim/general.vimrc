@@ -1,6 +1,10 @@
 " Unicode encoding
 set encoding=utf-8
 
+" Spelling  - activate with setlocal spell
+set spelllang=en
+set spellfile=$HOME/.config/nvim/en.utf-8.add
+
 " Colorscheme settings
 syntax enable
 set t_Co=256
