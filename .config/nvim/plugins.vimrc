@@ -38,3 +38,7 @@ let g:ctrlp_working_path_mode = 'c'  " default dir = current file
 
 " grammarous
 let g:grammarous#use_vim_spelllang = 1
+
+" Markdown composer
+let g:markdown_composer_external_renderer='pandoc -f markdown -t html'  " Pandoc mode
+let g:markdown_composer_autostart = 0

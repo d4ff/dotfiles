@@ -5,6 +5,9 @@ let mapleader="\,"
 map ¤ $
 imap ¤ $
 
+" Select all with ,a
+nmap <Leader>a gg0vG$<CR>
+
 " Remap O and o to stay in normal mode
 nmap o o<Esc>
 nmap O O<Esc>

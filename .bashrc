@@ -1,12 +1,7 @@
 #!/usr/bin/env bash
 
-
-# Make sudoeditor use neovim
-SUDO_EDITOR=/usr/bin/nvim
-export SUDO_EDITOR
-
-# Alias for tmux
-alias tmux="tmux -2"
+# dotfiles
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 # Path to the bash it configuration
 export BASH_IT="/home/d4ff/.bash_it"
@@ -58,5 +53,3 @@ export SCM_CHECK=true
 
 # Load Bash It
 source "$BASH_IT"/bash_it.sh
-alias config='/usr/bin/git --git-dir=/home/d4ff/.cfg/ --work-tree=/home/d4ff'
-alias config='/usr/bin/git --git-dir=/home/d4ff/.cfg/ --work-tree=/home/d4ff'

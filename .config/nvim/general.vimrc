@@ -27,6 +27,8 @@ set shiftwidth=4
 set expandtab
 set autoindent
 set fileformat=unix
+
+" Pweave
 au BufNewFile,BufRead *.pmd set filetype=python
 
 " Miscellaneous
