@@ -1,5 +1,9 @@
 call plug#begin('~/.config/nvim/plugged')
 
+" Pandoc integration
+Plug 'vim-pandoc/vim-pandoc'
+Plug 'vim-pandoc/vim-pandoc-syntax'
+
 " Spelling and grammar
 Plug 'https://github.com/rhysd/vim-grammarous.git'
 

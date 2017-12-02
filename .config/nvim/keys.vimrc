@@ -14,7 +14,7 @@ nmap O O<Esc>
 
 " Leader bidings
 noremap <leader>ev :tabnew $MYVIMRC<cr>
-noremap <leader>cs :tabnew ~/Documents/cheatsheet
+noremap <leader>cs :tabnew ~/Documents/cheatsheet<cr>
 nnoremap <Leader>o :CtrlP<CR>		" Open file menu
 nnoremap <Leader>O :CtrlPBuffer<CR>	" Open buffer menu
 noremap <leader>n :nohlsearch<CR>

@@ -39,3 +39,6 @@ count(ds, var) gir freq tabel (plyr package)
 
 # Markdown
 :Mpreview   to launch preview in browser
+
+# Pandoc
+pandoc --filter pandoc-citeproc input.md -s -o output.html#
