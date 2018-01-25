@@ -1,5 +1,12 @@
 call plug#begin('~/.config/nvim/plugged')
 
+" Toggle quickfix
+Plug 'milkypostman/vim-togglelist'
+
+" Scala
+Plug 'https://github.com/derekwyatt/vim-scala.git'
+Plug 'ensime/ensime-vim', { 'do': ':UpdateRemotePlugins' }
+
 " Pandoc integration
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
@@ -22,7 +29,11 @@ Plug 'https://github.com/lifepillar/vim-solarized8.git'
 " Auto-close brackets {([
 Plug 'https://github.com/Raimondi/delimitMate'
 
-" Fuzzy file finder
+" FZF / Ctrlp for file navigation
+if executable('fzf')
+  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+  Plug 'junegunn/fzf.vim'
+  endif
 Plug 'https://github.com/kien/ctrlp.vim.git'
 
 " Buffer overview
@@ -44,7 +55,7 @@ Plug 'https://github.com/thirtythreeforty/lessspace.vim.git'
 " Insert mode completions with TAB
 Plug 'https://github.com/ervandew/supertab.git'
 
-" Auto-completion in python
+" Auto-completion
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 " Better csv

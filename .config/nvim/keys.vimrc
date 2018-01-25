@@ -42,3 +42,8 @@ map <silent> <A-l> <C-w>>
 
 " Exit neovim terminal with Esc
 tnoremap <Esc> <C-\><C-n>
+
+" Fzf hotkeys
+nnoremap <leader>v :FzfFiles<cr>
+nnoremap <leader>u :FzfTags<cr>
+nnoremap <leader>j :call fzf#vim#tags("'".expand('<cword>'))<cr>
